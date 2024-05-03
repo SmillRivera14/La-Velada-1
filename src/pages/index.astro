@@ -7,11 +7,23 @@
 	</head>
 	<body>
 		<header>
-			<div class="absolute left-1/2 -translate-x-1/2 flex flex-col gap-1 justify-center items-center top-8">
-				<img class="w-32 lg:w-64 h-auto" src="/public/boxes/logo.webp" alt="Logo De La Veldad Del Año, tercera edición">
-				<h1 class="font-boxing text-3xl uppercase text-center text-white font-bold">
-					<span class="bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-400
-					leading-relaxed inline-block">LA VELADA DEL AÑO </span> <span class="text-yellow-300">III</span>
+			<div
+				class="absolute left-1/2 -translate-x-1/2 flex flex-col gap-1 justify-center items-center top-8 z-10"
+			>
+				<img
+					class="w-32 lg:w-64 h-auto"
+					src="/public/boxes/logo.webp"
+					alt="Logo De La Veldad Del Año, tercera edición"
+				/>
+				<h1
+					class="font-boxing text-5xl uppercase text-center text-white font-bold"
+				>
+					<span
+						class="bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-400
+						leading-relaxed inline-block"
+						>LA VELADA DEL AÑO
+					</span>
+					<span class="text-yellow-300">III </span>
 				</h1>
 			</div>
 		</header>
@@ -26,6 +38,11 @@
 						h-[40vh] lg:h-screen pt-24 border-b border-white/10
 					`}
 			>
+				<div
+					class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black"
+				>
+				</div>
+
 				<div class="relative w-full">
 					<img
 						class="left-0 h-full z-50 animate-fade-right"
@@ -48,7 +65,7 @@
 						alt="Fernanfloo"
 					/>
 					<img
-						class="left-[40%] h-[68%] z-10 animate-delay-1000 animate-fade-right"
+						class="left-[40%] h-[67%] z-10 animate-delay-1000 animate-fade-right"
 						src="/public/boxes/la-rivers.webp"
 						alt="La Rivers"
 					/>
@@ -81,7 +98,7 @@
 						alt="Luzu"
 					/>
 					<img
-						class="right-[40%] h-[68%] z-10 animate-delay-1000 animate-fade-left"
+						class="right-[40%] h-[66%] z-10 animate-delay-1000 animate-fade-left"
 						src="/public/boxes/rivers.webp"
 						alt="Rivers"
 					/>
@@ -90,6 +107,40 @@
 						src="/public/boxes/ampeter.webp"
 						alt="Ampeter"
 					/>
+				</div>
+
+				<div
+					id="info"
+					class="absolute bottom-48 z-50 mx-auto left-1/2 -translate-x-1/2"
+				>
+					<div class="flex flex-col">
+						<div class="px-5 pt-4 pb-4 bg-white text-black text-center">
+							<h2 class="font-boxing text-7xl inline-block
+							hover:contrast-150 hover:scale-105 transition">1 DE JULIO</h2>
+						</div>
+
+						<div class="px-5 pt-2 pb-1 bg-black text-white text-center">
+							<a
+								class="font-boxing text-[46px] inline-block
+								hover:contrast-150 hover:scale-105 transition"
+								href="https://twitch.tv/ibai"
+								target="_blank"
+								rel="noopener noreferrer"
+								>twitch.tv/<span class="text-yellow-300">ibai</span> 
+							</a>
+						</div>
+
+						<div class="px-5 pt-4 pb-4 bg-sky-600 text-center">
+							<a
+								class="font-boxing text-4xl inline-block
+								hover:contrast-150 hover:scale-105 transition text-white"
+								href="https://twitch.tv/ibai"
+								target="_blank"
+								rel="noopener noreferrer"
+								>Comprar Entradas
+							</a>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -104,13 +155,13 @@
 	}
 
 	@font-face {
-		font-family: 'Boxing';
+		font-family: "Boxing";
 		src: url(/public/fonts/boxing.otf);
 		font-weight: bold;
 	}
 
 	@font-face {
-		font-family:'Boxing Striped' ;
+		font-family: "Boxing Striped";
 		src: url(/public/fonts/boxing-striped.woff2);
 		font-weight: bold;
 	}
