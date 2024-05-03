@@ -6,7 +6,15 @@
 		<title>La velada del año - Un proyecto de Ibai</title>
 	</head>
 	<body>
-		<header></header>
+		<header>
+			<div class="absolute left-1/2 -translate-x-1/2 flex flex-col gap-1 justify-center items-center top-8">
+				<img class="w-32 lg:w-64 h-auto" src="/public/boxes/logo.webp" alt="Logo De La Veldad Del Año, tercera edición">
+				<h1 class="font-boxing text-3xl uppercase text-center text-white font-bold">
+					<span class="bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-400
+					leading-relaxed inline-block">LA VELADA DEL AÑO </span> <span class="text-yellow-300">III</span>
+				</h1>
+			</div>
+		</header>
 
 		<main>
 			<section
@@ -14,37 +22,38 @@
 				class={`flex justify-between relative
 						[&>div>img]:absolute [&>div>img]:bottom-0
 						[&>div>img]: w-auto
+						[&>div>img]:animate-ease-in-out [&>div>img]:animate-duration-1000
 						h-[40vh] lg:h-screen pt-24 border-b border-white/10
 					`}
 			>
 				<div class="relative w-full">
 					<img
-						class="left-0 h-full z-50"
+						class="left-0 h-full z-50 animate-fade-right"
 						src="/public/boxes/coscu.webp"
 						alt="Coscu"
 					/>
 					<img
-						class="left-[5%] h-[80%] z-40"
+						class="left-[5%] h-[80%] z-40 animate-delay-300 animate-fade-right"
 						src="/public/boxes/mayichi.webp"
 						alt="Mayichi"
 					/>
 					<img
-						class="left-[15%] h-[75%] z-30"
+						class="left-[15%] h-[75%] z-30 animate-delay-500 animate-fade-right"
 						src="/public/boxes/viruzz.webp"
 						alt="Viruzz"
 					/>
 					<img
-						class="left-[28%] h-[70%] z-20"
+						class="left-[28%] h-[70%] z-20 animate-delay-700 animate-fade-right"
 						src="/public/boxes/fernanfloo.webp"
 						alt="Fernanfloo"
 					/>
 					<img
-						class="left-[35%] h-[68%] z-10"
+						class="left-[40%] h-[68%] z-10 animate-delay-1000 animate-fade-right"
 						src="/public/boxes/la-rivers.webp"
 						alt="La Rivers"
 					/>
 					<img
-						class="left-[40%] h-[63%] z-0"
+						class="left-[44%] h-[63%] z-0 animate-delay-[1300ms] animate-fade-right"
 						src="/public/boxes/papigavi.webp"
 						alt="Papigavi"
 					/>
@@ -52,32 +61,32 @@
 
 				<div class="relative w-full">
 					<img
-						class="right-0 h-full z-50"
+						class="right-0 h-full z-50 animate-fade-left"
 						src="/public/boxes/german.webp"
 						alt="German"
 					/>
 					<img
-						class="right-[5%] h-[80%] z-40"
+						class="right-[5%] h-[80%] z-40 animate-delay-300 animate-fade-left"
 						src="/public/boxes/amouranth.webp"
 						alt="Amouranth"
 					/>
 					<img
-						class="right-[15%] h-[75%] z-30"
+						class="right-[17%] h-[75%] z-30 animate-delay-500 animate-fade-left"
 						src="/public/boxes/shelao.webp"
 						alt="Shelao"
 					/>
 					<img
-						class="right-[28%] h-[70%] z-20"
+						class="right-[29%] h-[70%] z-20 animate-delay-700 animate-fade-left"
 						src="/public/boxes/luzu.webp"
 						alt="Luzu"
 					/>
 					<img
-						class="right-[35%] h-[68%] z-10"
+						class="right-[40%] h-[68%] z-10 animate-delay-1000 animate-fade-left"
 						src="/public/boxes/rivers.webp"
 						alt="Rivers"
 					/>
 					<img
-						class="right-[40%] h-[63%] z-0"
+						class="right-[44%] h-[63%] z-0 animate-delay-[1300ms] animate-fade-left"
 						src="/public/boxes/ampeter.webp"
 						alt="Ampeter"
 					/>
@@ -92,5 +101,17 @@
 <style is:global>
 	body {
 		background: #131313;
+	}
+
+	@font-face {
+		font-family: 'Boxing';
+		src: url(/public/fonts/boxing.otf);
+		font-weight: bold;
+	}
+
+	@font-face {
+		font-family:'Boxing Striped' ;
+		src: url(/public/fonts/boxing-striped.woff2);
+		font-weight: bold;
 	}
 </style>
