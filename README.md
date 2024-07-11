@@ -1,47 +1,113 @@
-# Astro Starter Kit: Minimal
+# La Velada del Año - Un Proyecto de Ibai Llanos
 
-```sh
-npm create astro@latest -- --template minimal
+Bienvenido al proyecto "La Velada del Año", un sitio web diseñado para el evento anual organizado por Ibai Llanos. Este README te guiará a través de la estructura del proyecto, cómo configurarlo y ejecutarlo localmente.
+
+## Tabla de Contenidos
+
+1. [Descripción](#descripción)
+2. [Requisitos Previos](#requisitos-previos)
+3. [Instalación](#instalación)
+4. [Ejecución](#ejecución)
+5. [Estructura del Proyecto](#estructura-del-proyecto)
+6. [Contribuir](#contribuir)
+7. [Licencia](#licencia)
+
+## Descripción
+
+Este proyecto es una página web para "La Velada del Año", un evento de boxeo organizado por Ibai Llanos. La página incluye información sobre los participantes, enlaces a la transmisión en Twitch y opciones para comprar entradas.
+
+## Requisitos Previos
+
+Antes de comenzar, asegúrate de tener instalado lo siguiente en tu máquina:
+
+- [Node.js](https://nodejs.org/) (versión 14 o superior)
+- [NPM](https://www.npmjs.com/) (viene incluido con Node.js)
+
+## Instalación
+
+Sigue estos pasos para instalar el proyecto en tu máquina local:
+
+1. Clona el repositorio:
+   ```bash
+   git clone <URL_DEL_REPOSITORIO>
+   ```
+2. Navega al directorio del proyecto:
+   ```bash
+   cd <NOMBRE_DEL_DIRECTORIO>
+   ```
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+
+## Ejecución
+
+Para ejecutar el proyecto localmente, utiliza el siguiente comando:
+
+```bash
+npm start
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+Esto iniciará un servidor local y podrás ver la página web en `http://localhost:3000`.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Estructura del Proyecto
 
-## 🚀 Project Structure
+La estructura del proyecto es la siguiente:
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
+```
+la-velada-del-año/
 ├── public/
+│   ├── boxes/
+│   │   ├── coscu.webp
+│   │   ├── mayichi.webp
+│   │   ├── viruzz.webp
+│   │   ├── fernanfloo.webp
+│   │   ├── la-rivers.webp
+│   │   ├── papigavi.webp
+│   │   ├── german.webp
+│   │   ├── amouranth.webp
+│   │   ├── shelao.webp
+│   │   ├── luzu.webp
+│   │   ├── rivers.webp
+│   │   └── ampeter.webp
+│   ├── fonts/
+│   │   ├── boxing.otf
+│   │   └── boxing-striped.woff2
+│   └── favicon.svg
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── pages/
+│   │   └── clip-customs.css
+│   ├── JS/
+│   │   └── index.js
+│   └── styles/
+│       └── main.css
+├── index.html
+└── README.md
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- **public/**: Contiene imágenes, fuentes y el favicon.
+- **src/**: Contiene los archivos CSS y JavaScript.
+- **index.html**: Archivo principal HTML del proyecto.
+- **README.md**: Este archivo README.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Contribuir
 
-Any static assets, like images, can be placed in the `public/` directory.
+Si deseas contribuir a este proyecto, sigue estos pasos:
 
-## 🧞 Commands
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza los cambios necesarios y haz commits (`git commit -m 'Añadir nueva funcionalidad'`).
+4. Haz push a la rama (`git push origin feature/nueva-funcionalidad`).
+5. Abre un Pull Request.
 
-All commands are run from the root of the project, from a terminal:
+## Licencia
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
+Este es un proyecto de ejemplo, no es la landing real.
+---
 
-## 👀 Want to learn more?
+¡Gracias por visitar "La Velada del Año"! Esperamos que disfrutes del evento. Para más información, visita [twitch.tv/ibai](https://twitch.tv/ibai).
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+
+Para cualquier pregunta o comentario, por favor contacta a [Ibai Llanos](https://twitter.com/ibaillanos).
